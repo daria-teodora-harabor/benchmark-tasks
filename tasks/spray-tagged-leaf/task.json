@@ -1,0 +1,21 @@
+{
+  "title": "Spray one tagged leaf of a pepper plant, shielding the other leaves with a card",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "trigger sprayer",
+    "spot spraying",
+    "spray drift",
+    "shield",
+    "plant care"
+  ],
+  "instruction": "Spray the tagged leaf until its top is wet all over, without getting spray on any other leaf.",
+  "context": "Spot spraying next to plants that must stay dry is core work for landscaping and groundskeeping workers (about 950,000 in the US; O*NET 37-3011 lists hand-sprayer herbicide work) and for nursery workers, and a new pesticide is first tried on one test leaf. Trigger spray drifts onto the leaves below, so the label of a common ready-to-use herbicide (EPA 71995-33) says to shield nearby plants with cardboard: one hand holds the card while the other aims and squeezes.",
+  "setup": "On the table, in front of the arms: a terracotta pot (15 cm across, 11.5 cm tall, filled with soil to the rim) centred 40 cm in front of the arm bases and 10 cm right of the midline, holding a young pepper plant: a 21 cm green stem with eight ovate leaves (8.5-5 cm long, 45-52% as wide) on short stalks, alternate at 137.5 degrees, from 4.5 to 20 cm above the soil. The fourth leaf from the bottom (about 11 cm up, 8 cm long) points toward the arms' front right (45 degrees right of straight at the arms) and has a 1 x 3 cm strip of pink flagging tape on its stalk. An 8 oz (237 ml) square PET trigger spray bottle (5.5 x 5.5 x 15 cm body, white spray head with a blue trigger, full of liquid with a blue marker dye, 286 g) stands 34 cm in front of the arm bases and 40 cm right of the midline, its nozzle pointing 15 degrees toward the arms from straight left (in the setup image it is mostly hidden under the right gripper). A wooden crate (12 x 12 x 14 cm) stands 46 cm in front of the arm bases and 16 cm left of the midline, turned 45 degrees; on it lies a piece of 2 mm corrugated cardboard (16 x 20 cm, 15 g), centred, its short edges overhanging the crate by 4 cm and its long edges by 2 cm.",
+  "scoring": "A squeeze sprays when the trigger passes 10 of its 12 mm (1 ml as droplets of 40-600 um, volume median 200 um, in a 40 degree cone at 12 m/s; none while the bottle leans more than 75 degrees from upright). A leaf is wet where droplet stains (twice the droplet's diameter) cover it. Score 0 if the bottle, a gripper or the card ever comes within 1 mm of the plant (any leaf, stalk or the stem), or if the other seven leaves have more than 1 cm2 wet in total. Otherwise the score is the tagged leaf's wet fraction divided by 0.8, up to 1.0. The trial ends with success when the tagged leaf is 80% or more wet, the others have 1 cm2 or less, no spray is in the air, held for 1 s. Doing nothing scores 0. In a real trial: dyed water or water-sensitive spray cards on the leaves, photographed against a 1 cm grid.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Wipe or replace the leaves' spray cards, wipe the card, and put the bottle and card back as at the start. Run with -E object_jitter=0: the demo depends on it.",
+  "fidelity": "The plant is built in code (8 leaves on a 21 cm stem), drawn only: no colliders, the leaves don't bend, so touching is checked geometrically. The spray is a droplet model (1 ml/stroke, 40 degree cone, 12 m/s, 200 um median; estimates until measured on a real bottle); drops don't splash or run off and pass through the hands. 120 drops per squeeze are drawn as 3 mm blue beads. Rigid card; the bottle's trigger preload (8 N) is provisional.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-D3WQE4"
+}
