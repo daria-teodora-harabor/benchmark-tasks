@@ -1,0 +1,22 @@
+{
+  "title": "Steam a pitcher of milk for a latte with a commercial espresso machine's steam wand",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "espresso machine",
+    "steam wand",
+    "milk steaming",
+    "barista",
+    "knob",
+    "depth control"
+  ],
+  "instruction": "Steam the milk in the pitcher for a latte: purge the steam wand first, steam the milk until it is 55 to 65 degrees C and 20 to 40% more in volume, then turn the steam off and set the pitcher down.",
+  "context": "Steaming milk is everyday barista work for the lattes and cappuccinos coffee shops sell (snack and nonalcoholic beverage bars employ about a million US workers). One hand holds the pitcher so the wand's tip stays a few millimetres under the rising foam, then sinks it to roll the milk; the other opens and shuts the steam, which must be off before the tip leaves the milk or hot milk sprays. Overlap: the accepted espresso tasks tamp and lock a portafilter (TK-TLLPCQ) or knock out a puck (TK-KDXU22); BEHAVIOR-1K's make_a_cappuccino pours ready-made foam, with no wand.",
+  "setup": "On the table, against its far edge: a two-group commercial espresso machine (Gaggia La Vetro size: 76 cm wide, 53 cm deep, 47 cm tall; black, with a stainless drip tray whose grid is 14.5 cm up), its front panel 37.5 cm in front of the arm bases, its left end 12.5 cm left of the midline and its right end at the table's right edge. Two chrome group heads with black-handled portafilters, 17 cm either side of the machine's centre. The left steam wand (a 10 mm stainless tube, 17 cm long) hangs from a ball joint 32 cm above the counter and 3.5 cm left of the midline, swung 25 degrees out toward the arms; its tip (4 holes of 1.5 mm) is 16.6 cm above the counter and 29 cm in front of the arm bases. Its steam knob (black, octagonal, 45 mm across and 32 mm long, with a white pointer line and a chrome ring) is on the front panel 37 cm up, directly above the wand: shut with the pointer down, fully open after a quarter turn counterclockwise, steam from 10 degrees. A 12 oz stainless steel milk pitcher (71 mm across, 95 mm tall, 220 g, handle toward the arms) stands on the counter 24 cm in front of the arm bases and 3 cm left of the midline, holding 170 ml of whole milk at 4 degrees C; a clip-on thermometer (20 mm dial, 0-100 degrees C, red needle, green marks at 55 and 65) is clipped inside its rim on the far left, toward the machine, its dial just above the rim.",
+  "scoring": "A milk model: steam (1.0 g/s fully open) heats the milk while the wand's tip is under its surface (latent and sensible heat; it adds its water); within 8 mm of the surface the tip also draws in air (10 ml/s, none below 15 mm), which raises the surface. Score 0 if the milk ever goes over 70 degrees C, the tip leaves the milk while the steam is on (it sprays), milk spills, or the pitcher falls. Otherwise 0.25 once the milk reaches 40 degrees C; 0.5 if it ends at 55-65 degrees C; 0.75 if it also ends 20-40% more in volume; 1.0 if the wand was also purged (1 s or more of steam with the tip out of the pitcher, before steaming) and at the end the steam is off and the pitcher stands upright on the counter. Real trial: a probe thermometer with a maximum reading, a pitcher with volume marks read right after steaming, and a video for the purge and the order of steam off and tip out.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Pour out the milk; rinse and cool the pitcher; refill it with 170 ml of milk from the fridge (4 degrees C); wipe and purge the wand and shut the knob. Run with -E object_jitter=0: the demo depends on it.",
+  "fidelity": "The machine is fixed and its wand rigid (a real wand swivels on a ball joint). The milk is a model, not a fluid: steam heat and water; air drawn in by the tip's depth (no published law: 10 ml/s within 8 mm, provisional); foam as added volume with no texture; no sloshing (the milk is part of the pitcher's rigid mass) and no cooling. The knob turns against damping only (0.1 N*m*s/rad, provisional; no source gives a torque). Markers draw the milk's surface, the thermometer, steam and sprayed milk.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0 (60.3 degrees C, 34% more in volume, at step 942)",
+  "media": "M-CXASXN"
+}
